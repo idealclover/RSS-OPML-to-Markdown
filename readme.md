@@ -10,24 +10,41 @@ RSS-OPML-to-Markdown 可以将从平台导出的 OPML 文件转化为易读的 M
 
 转换前 [OPML](/sample.xml) -> 转换后 [Markdown](/sample.md)
 
-##How to Use
+## How to Use
 
 本项目基于 Python3 构建，依赖包 [listparser](https://pypi.org/project/listparser/) 与 [tabulate](https://pypi.org/project/tabulate/)
 
+### 使用pip安装
+
+1. 下载项目
+
+```
+pip install RSS-OPML-to-Markdown
+```
+
+2. 使用项目
+
+```
+rss-opml-to-markdown {OPML文件的位置与名称} {期望输出markdown文件的位置与名称}
+```
+
+> 注：后一参数为空则输出结果到控制台
+
+### 使用源码构建
+
 1. 下载本python包 [链接](https://github.com/idealclover/RSS-OPML-to-Markdown/archive/master.zip)
+
 2. 下载依赖
 
 ```
 pip install listparser, tabulate
 ```
 
-3. 进入项目目录
+3. 进入项目目录并启动项目
 
 ```
 python rss-opml-to-markdown.py {OPML文件的位置与名称} {期望输出markdown文件的位置与名称}
 ```
-
-> 注：后一参数为空则输出结果到控制台
 
 ## Planned Features
 

@@ -1,2 +1,2 @@
-listparser==0.18
+﻿listparser==0.18
 tabulate==0.8.2

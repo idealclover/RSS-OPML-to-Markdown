@@ -25,26 +25,10 @@ pip install RSS-OPML-to-Markdown
 2. 使用项目
 
 ```
-rss-opml-to-markdown {OPML文件的位置与名称} {期望输出markdown文件的位置与名称}
+rss_opml_to_markdown {OPML文件的位置与名称} {期望输出markdown文件的位置与名称}
 ```
 
 > 注：后一参数为空则输出结果到控制台
-
-### 使用源码构建
-
-1. 下载本python包 [链接](https://github.com/idealclover/RSS-OPML-to-Markdown/archive/master.zip)
-
-2. 下载依赖
-
-```
-pip install listparser, tabulate
-```
-
-3. 进入项目目录并启动项目
-
-```
-python rss-opml-to-markdown.py {OPML文件的位置与名称} {期望输出markdown文件的位置与名称}
-```
 
 ## Planned Features
 

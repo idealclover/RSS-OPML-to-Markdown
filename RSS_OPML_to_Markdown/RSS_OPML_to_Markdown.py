@@ -3,6 +3,8 @@ import listparser
 import tabulate
 import sys
 
+name = "rss-opml-to-markdown"
+
 
 def parse(file_name):
     result = listparser.parse(file_name)
@@ -30,7 +32,13 @@ def print_to_file(feeds_list, filename):
 
 
 def main():
-    if len(sys.argv) == 2:
+    intro = """
+    this is a help message
+    """
+    if len(sys.argv) == 1:
+        print(intro)
+        sys.exit()
+    elif len(sys.argv) == 2:
         feeds_list = parse(sys.argv[1])
         print_to_std(feeds_list)
     elif len(sys.argv) == 3:
